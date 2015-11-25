@@ -42,14 +42,22 @@ color: red;
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Лабораторная работа Хайртдиновой Гульфины</h3>
 
 <p id="area">
-       
-            <input type="text" class="td" placeholder="Первая сторона параллелограмма" value="" id="stor1" style="top:5px; left:5px; width: 210px">
-            <input type="text" class="td" placeholder="Вторая сторона параллелограмма" value="" id="stor2"style="top:35px; left:5px; width: 210px">
-            <input type="text" class="td" placeholder="Угол между ними" value="" id="ugol" style="top:65px; left:5px; width: 210px">
-            <input type="button" value="Вычислить" onclick="det()" style="position: absolute; top:95px; left: 5px; width: 210px; height: 25px; font-family: Lobster, sans-serif;">
-            <span style="position: absolute; top:135px; left: 5px;" id = "answer"> Ответ: </span>
-        </p>
 
+
+<input type="text" class="td" value="0" id="td11" style="top:0px; left:0px;">
+<input type="text" class="td" value="0" id="td12"style="top:0px; left:70px;">
+
+
+
+<input type="button" 
+          value="Вычислить" onclick="det()" style="position: absolute; top:140px; left: 0px; width: 120px; height: 30px;">
+<span style="position: absolute; top:180px; left:50px;" id = "answer"> Ответ </span>	
+
+
+</div>
+<div>
+
+</p>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Gulfina/lab1">Lab1</a> is maintained by <a href="https://github.com/Gulfina">Gulfina</a>.</span>
 
@@ -62,15 +70,6 @@ color: red;
   </body>
 </html>
 <script>
-function det() {
-var a11, a12, a13, p, opr;
-a11 = parseInt( document.getElementById("td11").value );
-a12 = parseInt( document.getElementById("td12").value );
-a13 = parseInt( document.getElementById("td13").value );
-p = 0.5*(a11+a12+a13);
-opr = (p*(p-a11)*(p-a12)*(p-a13));
-//alert( opr );
-document.getElementById("answer").innerHTML = 
-String( opr );
+
 }
 </script>
