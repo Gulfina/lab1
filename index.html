@@ -70,6 +70,15 @@ color: red;
   </body>
 </html>
 <script>
+function det() {
+var a11, a12,  opr;
+a11 = parseInt( document.getElementById("td11").value );
+a12 = parseInt( document.getElementById("td12").value );
+
+opr = a11 * a12 ;
+//alert( opr );
+document.getElementById("answer").innerHTML = 
+String( opr );
 
 }
 </script>
